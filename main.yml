@@ -1,0 +1,11 @@
+---
+# Base setup
+- hosts: all
+  roles: 
+    - role: wcl-common
+
+# Perform the Setup of the components
+- include: setup.yml
+
+# Do the code / app deployment
+- include: deploy.yml
